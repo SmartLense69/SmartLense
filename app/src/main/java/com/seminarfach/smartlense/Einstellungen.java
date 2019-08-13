@@ -128,7 +128,7 @@ public class Einstellungen extends AppCompatActivity {
         //Enable Bluetooth on Device when necessary
         enableBT(mBTAdapter);
 
-        //Get Bluetooth Device
+        //Get Bluetooth Devices
         BluetoothDevice BTdevice =
                 MainActivity.bluetoothConnector.
                         getBTpaired(mBTAdapter, mItemsPairedDevices, mBTAddress);
