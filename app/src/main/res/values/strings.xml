@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SmartLense</string>
+    <string name="aufbauplan">Aufbauplan</string>
+    <string name="camera">Kamera</string>
+    <string name="feedback">Feedback</string>
+    <string name="title_aufbauplan1">Lichtmikroskop</string>
+    <string name="aufbauplan1_text1">Die Geschichte des Lichtmikroskops ist eng an die Erforschung der Optik verknüpft. Schon in der Antike beobachten Menschen, dass sich bei einem Wassertropfen auf einem Blatt die Strukturen vergrößert zeigten. Als die Ägypter vor über 3500 Jahren die Fähigkeit gewannen, Glas herzustellen, war im Prinzip das wesentliche Element eines Mikroskops ersonnen: die Linse.
+Linsen können von kugelförmig bis sehr flach beschaffen sein. Gemeinsam ist ihnen eine möglichst gleichmäßig gewölbte Oberfläche. Das Besondere an Linsen: wenn Lichtstrahlen durch sie hindurchfallen, verändern sie ihre Richtung. Die "Brechung des Lichts" führt zu einer optischen Vergrößerung. Auf Basis dieser Kenntnis entwickelten italienische Mönche im 13. Jahrhundert dann einen Lesestein aus Beryll - in einen Holzrahmen gefasst wurde daraus die Brille. (siehe auch "Erfinder der Brille")
+Es dauerte jedoch bis Anfang des 17. Jahrhunderts, ehe der niederländische Brillenschleifer Zacharias Janssen das erste Lichtmikroskop konstruierte: zwei hintereinader gesetzte Linsen eröffneten einen bis dahin nie gesehenen Mikrokosmos. Leider waren die ersten Mikroskope noch sehr fehleranfällig: die Qualität der kleinen Linsen war noch nicht wirklich gut, da das mechanische Herstellungsverfahren noch sehr vom Zufall abhing.
+Der Niederländer Antonis van Leeuwenhoek entwickelte daher Ende des 17. Jahhunderts eine andere Idee: sein Mikroskop hatte nur eine Linse, die aber sehr klein und fast kugelförmig war. So konnten aufgrund der hohen Brechwirkung sehr große Vergrößerungen erreichen. Es dauerte bis Mitte des 19. Jahrhunderts, ehe die zusammengesetzten Lichtmikroskope (mit zwei Linsen) die gleiche Abbildungsqualität erreichten.
+Die Lichtgestalt in der Geschichte der Mikroskopie war jedoch Ernst Abbe. Der Jenaer Optiker und Mikroskop-Fabrikant Carl Zeiss beauftragte Abbe, die Wirkungsweise des Mikroskops theroretisch und wissenschaftlich zu untermauern und vor allem die optimale Beschaffenheit der Linsen zu berechnen. Ernst Abbe brauchte vier Jahre für seine Studien, und am Ende stand das, was wir heute als moderne Mikroskop bezeichnen. Ein Gerät, dass mit nur sehr geringen Darstellungsfehlern bis zu 1.500 vergrößern kann.
+Das neue Lichtmikroskop öffnete der Wissenschaft und speiziell der Medizin vollkommen neue Wege. Robert Koch entdeckte 1882 das Tuberkulose-Virus und entwickelte ein Heilmittel. 1905 bekam er dafür den Medizin-Nobelpreis. Ohne die Forschungen und Erkenntnisse von Ernst Abbe wäre das nicht möglich gewesen.
+    </string>
+    <string name="camera_activ">Kameraverbindung wird geprüft</string>
+    <string name="camera_button">Bild aufnehmen</string>
+    <string name="materialcolorpicker__descLib">Material Color Picker Dialog</string>
+    <string name="materialcolorpicker__errHex">Hex Code Format incorrect</string>
+    <string name="materialcolorpicker__inputColor">Color: </string>
+    <string name="materialcolorpicker__btnSelectColor">Select</string>
+    <string name="materialcolorpicker__hash" translatable="false">#</string>
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_WLAN_bluetooth_string">Verbindungsart für die Kamera</string>
+    <string name="WLAN">WLAN</string>
+    <string name="Bluetooth">Bluetooth</string>
+    <string name="wlanip">WLAN - IP</string>
+    <string name="Bluetoothaddress">Bluetooth-Adresse</string>
+    <string name="Bluetooth_connect">Bluetooth Einschalten</string>
+    <string name="GoBack">Go Back</string>
+</resources>
