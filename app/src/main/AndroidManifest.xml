@@ -24,14 +24,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Colorpicker"></activity>
-        <activity android:name=".Einstellungen" />
+        <activity
+            android:name=".Colorpicker"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".Einstellungen"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CameraActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
-        <activity android:name=".Aufbauplan" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".Aufbauplan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
