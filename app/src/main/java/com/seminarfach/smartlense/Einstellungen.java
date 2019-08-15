@@ -44,8 +44,9 @@ public class Einstellungen extends AppCompatActivity {
 
     //Bluetooth Stuff
     //BT Socket is required for Camera Activity
-    public static Boolean wifioderbluetooth;
-    public OutputStream outputStream;
+    public static Boolean wifioderbluetooth = true;
+    public static String IPaddress;
+    public static OutputStream outputStream;
     public InputStream inputStream;
     public String BTAdress = "B8:27:EB:E6:8A:FD";
     public String userMAC = null;
@@ -233,7 +234,6 @@ public class Einstellungen extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // Get the selected item text from ListView
-                userMAC = (String) parent.getItemAtPosition(position);
             }
         });
 
@@ -247,10 +247,13 @@ public class Einstellungen extends AppCompatActivity {
         bluetooth_connect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 //Checks for Device Ability for Bluetooth
                 if (MainActivity.bluetoothConnector.checkBT()) {
+
                     //Prevent creating multiple Sockets
                     if (MainActivity.BTsocket == null) {
+
                         MainActivity.BTsocket = finalBTConnect(itemsPairedDevices,
                                 BTAdress, listView, textView, userMAC);
                     }
@@ -266,18 +269,23 @@ public class Einstellungen extends AppCompatActivity {
                             MainActivity.BTsocket.connect();
                         } catch (IOException e) {
                             e.printStackTrace();
+
                             Log.v(TAG, "FAIL: Could not connect to Bluetooth");
                             Toast.makeText(Einstellungen.this, "Please turn on your microscope.",
                                     Toast.LENGTH_SHORT).show();
+
                             bluetoothmessage.setTextColor(Color.RED);
                             bluetoothmessage.setText("Bluetooth Connection Failed!");
                             bluetoothmessage.setVisibility(View.VISIBLE);
+
                         } catch (NullPointerException e) {
                             e.printStackTrace();
+
                             Log.v(TAG, "FAIL: Bluetooth probably not enabled");
                             Toast.makeText(Einstellungen.this, "Please turn on your Bluetooth.",
                                     Toast.LENGTH_SHORT).show();
                         }
+
                         try {
                             //Open OutputStream "Channel"
                             outputStream = MainActivity.BTsocket.getOutputStream();
@@ -288,14 +296,19 @@ public class Einstellungen extends AppCompatActivity {
                         } catch (NullPointerException e) {
                             e.printStackTrace();
                         }
+
                         try {
+
                             //Send String to Raspberry PI
                             outputStream.write("New Device connected!".getBytes());
                             Log.v(TAG, "Connection Successful!");
+
                             bluetoothmessage.setTextColor(Color.GREEN);
                             bluetoothmessage.setText("Bluetooth Connection Succeded!");
                             bluetoothmessage.setVisibility(View.VISIBLE);
+
                             //outputStream.close();
+
                         } catch (IOException e) {
                             e.printStackTrace();
                             Log.v(TAG, "FAIL: Couldn't write in OutputStream!");
@@ -322,7 +335,6 @@ public class Einstellungen extends AppCompatActivity {
                 final String SSID = SSIDedeittext.getText().toString();
                 final String PSK = PSKedittext.getText().toString();
                 final String WLANConnectionData = "" + SSID + "@" + PSK;
-                String IPaddress = null;
                 if (MainActivity.BTsocket != null) {
                     try {
                         outputStream.write(WLANConnectionData.getBytes());

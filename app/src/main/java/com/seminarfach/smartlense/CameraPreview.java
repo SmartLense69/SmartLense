@@ -44,7 +44,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 
     /**
      * Tells the camera where to render the preview
-     *
      * @param holder Surface Holder
      */
     public void surfaceCreated(SurfaceHolder holder) {

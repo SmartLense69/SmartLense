@@ -23,12 +23,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 import static com.seminarfach.smartlense.Colorpicker.blueseekvalue;
 import static com.seminarfach.smartlense.Colorpicker.greenseekvalue;
 import static com.seminarfach.smartlense.Colorpicker.redseekvalue;
+import static com.seminarfach.smartlense.Einstellungen.outputStream;
+import static com.seminarfach.smartlense.Einstellungen.wifioderbluetooth;
 import static com.seminarfach.smartlense.R.drawable;
 import static com.seminarfach.smartlense.R.id;
 import static com.seminarfach.smartlense.R.layout;
@@ -50,15 +51,12 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
     Button colorpickerbutton;
     TableLayout lichttable;
 
-    //Bluetooth - Transmit data to Raspberry Pi
-    public OutputStream outputStream;
-
     //Camera
     public PackageManager pm;
     public Camera mCamera;
 
     //Get Camera Picture "mPicture"
-    private Camera.PictureCallback mPicture = new Camera.PictureCallback() {
+    public Camera.PictureCallback mPicture = new Camera.PictureCallback() {
         @Override
         public void onPictureTaken(byte[] data, Camera camera) {
 
@@ -77,6 +75,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
             } catch (IOException e) {
                 Log.d(TAG, "Error accessing file: " + e.getMessage());
             }
+            mCamera.startPreview();
         }
     };
 
@@ -156,9 +155,8 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
 
                         //Checks if Bluetooth or WLAN is chosen in the options
                         //Sets Button to the Color chosen.
-                        if (Einstellungen.wifioderbluetooth) { //if Bluetooth
+                        if (wifioderbluetooth) { //if Bluetooth
                             try {
-                                outputStream = MainActivity.BTsocket.getOutputStream();
                                 outputStream.write(colorcommand.getBytes());
                                 //Flushing and closing the outputStream is necessary for separated
                                 //Strings
