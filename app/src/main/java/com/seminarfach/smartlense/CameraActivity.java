@@ -197,10 +197,8 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
+
         //Takes Picture
-        //FIXME: On Real Device: When trying to capture, picture freezes,
-        // - when trying to take another one, RunTimeError: taking picture failed.
-        // - On Emulator: picture doesn't show up, NullPointerException when pressing Capture.
         mCamera.takePicture(null, null, mPicture);
     }
 
