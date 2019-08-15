@@ -44,7 +44,7 @@ public class Einstellungen extends AppCompatActivity {
 
     //Bluetooth Stuff
     //BT Socket is required for Camera Activity
-    public static Boolean wifioderbluetooth = true;
+    public static Boolean wifioderbluetooth = false;
     public static String IPaddress;
     public static OutputStream outputStream;
     public InputStream inputStream;

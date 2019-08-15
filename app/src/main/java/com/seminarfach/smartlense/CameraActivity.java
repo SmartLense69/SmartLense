@@ -17,6 +17,7 @@ import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import java.io.File;
@@ -28,6 +29,7 @@ import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 import static com.seminarfach.smartlense.Colorpicker.blueseekvalue;
 import static com.seminarfach.smartlense.Colorpicker.greenseekvalue;
 import static com.seminarfach.smartlense.Colorpicker.redseekvalue;
+import static com.seminarfach.smartlense.Einstellungen.IPaddress;
 import static com.seminarfach.smartlense.Einstellungen.outputStream;
 import static com.seminarfach.smartlense.Einstellungen.wifioderbluetooth;
 import static com.seminarfach.smartlense.R.drawable;
@@ -152,10 +154,9 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
 
                         String finalColorValue = Colorpicker.getColorvalue();
                         String colorcommand = (finalid + finalColorValue);
-
                         //Checks if Bluetooth or WLAN is chosen in the options
                         //Sets Button to the Color chosen.
-                        if (wifioderbluetooth) { //if Bluetooth
+                        if (wifioderbluetooth == true) { //if Bluetooth
                             try {
                                 outputStream.write(colorcommand.getBytes());
                                 //Flushing and closing the outputStream is necessary for separated
@@ -166,9 +167,12 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
                                         .rgb(redseekvalue, greenseekvalue, blueseekvalue));
                             } catch (IOException e) {
                                 e.printStackTrace();
+                            } catch (NullPointerException e) {
+                                e.printStackTrace();
+                                Toast.makeText(CameraActivity.this, "Please enable your Bluetooth", Toast.LENGTH_LONG).show();
                             }
                         } else { //if WLAN
-                            new WLANconnection().execute("http://192.168.178.59:5000/" + colorcommand);
+                            new WLANconnection().execute("http://" + IPaddress + ":5000/" + colorcommand);
                             b.setBackgroundColor(Color.rgb(redseekvalue, greenseekvalue, blueseekvalue));
                         }
                     }

@@ -17,11 +17,8 @@
             android:id="@+id/colorpicker"
             android:layout_width="match_parent"
             android:layout_height="66dp"
-            android:background="@drawable/background"
-            android:backgroundTint="#000000"
-            android:foreground="@drawable/colorpicker"
-            android:textOff=" "
-            android:textOn=" " />
+            android:forceHasOverlappingRendering="true"
+            android:foreground="@drawable/colorpicker" />
 
         <Button
             android:id="@+id/empty1"
