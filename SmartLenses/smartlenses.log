@@ -1,0 +1,55 @@
+2019-08-14 23:10:08,717 - SmartLenses - INFO - Aktuelle Bluetooth Adresse: B8:27:EB:E6:8A:FD
+2019-08-14 23:10:08,718 - SmartLenses - INFO - Aktuelle Internet Adresse: 192.168.178.59
+2019-08-14 23:10:08,815 - SmartLenses - INFO - Start Bluetooth server on B8:27:EB:E6:8A:FD
+2019-08-14 23:10:08,816 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:10:08,831 - SmartLenses - INFO - Start Web Server on: 192.168.178.59
+2019-08-14 23:12:31,127 - SmartLenses - INFO - Aktuelle Bluetooth Adresse: B8:27:EB:E6:8A:FD
+2019-08-14 23:12:31,128 - SmartLenses - INFO - Aktuelle Internet Adresse: 192.168.178.59
+2019-08-14 23:12:31,230 - SmartLenses - INFO - Start Bluetooth server on B8:27:EB:E6:8A:FD
+2019-08-14 23:12:31,234 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:12:31,249 - SmartLenses - INFO - Start Web Server on: 192.168.178.59
+2019-08-14 23:19:05,525 - SmartLenses - ERROR - (104, 'Connection reset by peer')
+2019-08-14 23:19:05,526 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:22:59,524 - SmartLenses - INFO - Aktuelle Bluetooth Adresse: B8:27:EB:E6:8A:FD
+2019-08-14 23:22:59,525 - SmartLenses - INFO - Aktuelle Internet Adresse: 192.168.178.59
+2019-08-14 23:22:59,635 - SmartLenses - INFO - Start Bluetooth server on B8:27:EB:E6:8A:FD
+2019-08-14 23:22:59,636 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:22:59,650 - SmartLenses - INFO - Start Web Server on: 192.168.178.59
+2019-08-14 23:24:00,066 - SmartLenses - ERROR - global name 'ssid' is not defined
+2019-08-14 23:24:00,067 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:27:05,270 - SmartLenses - INFO - Aktuelle Bluetooth Adresse: B8:27:EB:E6:8A:FD
+2019-08-14 23:27:05,271 - SmartLenses - INFO - Aktuelle Internet Adresse: 192.168.178.59
+2019-08-14 23:27:05,376 - SmartLenses - INFO - Start Bluetooth server on B8:27:EB:E6:8A:FD
+2019-08-14 23:27:05,378 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:27:05,392 - SmartLenses - INFO - Start Web Server on: 192.168.178.59
+2019-08-14 23:28:02,177 - SmartLenses - ERROR - (104, 'Connection reset by peer')
+2019-08-14 23:28:02,180 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:30:01,637 - SmartLenses - INFO - Aktuelle Bluetooth Adresse: B8:27:EB:E6:8A:FD
+2019-08-14 23:30:01,639 - SmartLenses - INFO - Aktuelle Internet Adresse: 192.168.178.59
+2019-08-14 23:30:01,746 - SmartLenses - INFO - Start Bluetooth server on B8:27:EB:E6:8A:FD
+2019-08-14 23:30:01,750 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:30:01,763 - SmartLenses - INFO - Start Web Server on: 192.168.178.59
+2019-08-14 23:31:48,259 - SmartLenses - INFO - Aktuelle Bluetooth Adresse: B8:27:EB:E6:8A:FD
+2019-08-14 23:31:48,260 - SmartLenses - INFO - Aktuelle Internet Adresse: 192.168.178.59
+2019-08-14 23:31:48,362 - SmartLenses - INFO - Start Bluetooth server on B8:27:EB:E6:8A:FD
+2019-08-14 23:31:48,366 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:31:48,377 - SmartLenses - INFO - Start Web Server on: 192.168.178.59
+2019-08-14 23:32:23,681 - SmartLenses - ERROR - (104, 'Connection reset by peer')
+2019-08-14 23:32:23,683 - SmartLenses - INFO - Starte socket neu ...
+2019-08-14 23:33:41,535 - SmartLenses - ERROR - (104, 'Connection reset by peer')
+2019-08-14 23:33:41,537 - SmartLenses - INFO - Starte socket neu ...
+2019-08-16 08:17:27,809 - SmartLenses - INFO - Aktuelle Bluetooth Adresse: B8:27:EB:E6:8A:FD
+2019-08-16 08:17:27,810 - SmartLenses - INFO - Aktuelle Internet Adresse: 192.168.178.59
+2019-08-16 08:17:27,895 - SmartLenses - INFO - Start Bluetooth server on B8:27:EB:E6:8A:FD
+2019-08-16 08:17:27,896 - SmartLenses - INFO - Starte socket neu ...
+2019-08-16 08:17:27,909 - SmartLenses - INFO - Start Web Server on: 192.168.178.59
+2019-08-16 08:24:19,879 - SmartLenses - INFO - Aktuelle Bluetooth Adresse: B8:27:EB:E6:8A:FD
+2019-08-16 08:24:19,880 - SmartLenses - INFO - Aktuelle Internet Adresse: 192.168.178.59
+2019-08-16 08:24:19,980 - SmartLenses - INFO - Start Bluetooth server on B8:27:EB:E6:8A:FD
+2019-08-16 08:24:19,982 - SmartLenses - INFO - Starte socket neu ...
+2019-08-16 08:24:20,003 - SmartLenses - INFO - Start Web Server on: 192.168.178.59
+2019-08-16 08:46:22,742 - SmartLenses - INFO - Aktuelle Bluetooth Adresse: B8:27:EB:E6:8A:FD
+2019-08-16 08:46:22,743 - SmartLenses - INFO - Aktuelle Internet Adresse: 192.168.178.59
+2019-08-16 08:46:22,841 - SmartLenses - INFO - Start Bluetooth server on B8:27:EB:E6:8A:FD
+2019-08-16 08:46:22,845 - SmartLenses - INFO - Starte socket neu ...
+2019-08-16 08:46:22,854 - SmartLenses - INFO - Start Web Server on: 192.168.178.59

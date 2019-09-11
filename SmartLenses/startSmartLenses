@@ -1,0 +1,2 @@
+cd /home/pi/SmartLenses
+sudo python smartlenses.py
